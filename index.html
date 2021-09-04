@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- audio tag is helping us to play audio on the browser  -->
+    <audio controls>
+        <source src="./melody-of-nature-main-6672.mp3" type="audio/mpeg" />
+        Browser Does not support the audio element.
+    </audio>
+    <!--  -->
+    <div class="audio-player">
+        <!-- In Canvas we will draw the visualisation -->
+        <canvas height="300" width="1200"></canvas>
+        <!-- This is the control section for audio -->
+        <div class="controls">
+            <button class="play-pause"><span class="material-icons">
+                    play_circle
+                </span></button>
+            <input type="range" class="seekbar" ></input>
+            <span class="material-icons white">volume_down</span>
+            <input type="range" class="volume"></input>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
