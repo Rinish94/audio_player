@@ -4,6 +4,7 @@ const audioElement = document.querySelector("audio");
 let count = 1; // count variable is helping to make changes from one canvasLines to next
 let flag = true; // flag variable is used to check when  play/pause button is been clicked by the user
 
+
 // CanvasClick function helps us  to access the id's of each canvasLines in the canvas tag
 CanvasClick = (val) => {
   for (let i = 1; i <= 145; i++) {
